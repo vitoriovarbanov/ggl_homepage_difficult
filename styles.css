@@ -1,0 +1,308 @@
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body{
+      margin: 0;
+      padding: 0;
+  }
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: gray solid 2px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+/*  FIRST CONTAINER - GOOGLE LOGO AND INPUT FORM*/
+.navbar .container1{
+    width: 900px;
+    display: flex;
+    padding: auto;
+    align-items: center;
+    justify-content: space-evenly;
+       
+}
+.container1 .logo{
+    max-width: 100px;
+    margin-right: 20px;
+    
+}
+.container1 input{
+    width: 80%;
+    height: 30px;
+    border-radius: 18px;
+    border: 1px solid rgb(218, 218, 218);
+    font-size: 16px;
+    outline: none;
+    padding-left: 30px;
+}
+#input:hover { 
+        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+        border-color: rgba(223,225,229,0);
+    }
+button{
+  padding: 5px;
+  background: white;
+  color: #2196F3;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.test{
+    position: relative;
+    width: 80%;
+}
+/* SECOND CONTAINER - PROFILE PICTURE AND GOOGLE APPS GRID */
+.navbar .container2{
+    width: 250px;
+    display: flex;
+    justify-content: flex-end;
+
+    
+}
+.container2 img{
+    margin: 15px;
+}
+#img1{
+    padding-bottom: 5px;
+    width: 20px;
+}
+#img2{
+    border-radius: 30px;
+    width: 25px;
+}
+/*BOTTOM NAVBAR*/
+.bottom_navbar{
+    width: 100%;
+}
+.bottom_navbar ul{
+   padding-top: 50px;
+   list-style: none;
+   display: flex;
+   justify-content: flex-start;
+   padding-left: 140px;
+   width: 70%;
+}
+
+.bottom_navbar li{
+    padding-top: 5px;
+
+}
+
+.bottom_navbar a{
+    font-size: 16px;
+    text-decoration: none;
+    padding-left: 30px;
+    color: gray;
+}
+.bottom_navbar #settings{
+    padding-left: 60px;
+
+}
+/*MAIN */
+.main{
+    width: 70%;
+    margin-left: 160px;
+    padding-top: 5px;
+}
+.links ul{
+    list-style: none;
+    padding: 0;
+}
+.gray{
+    color: #5f6368;
+}
+.links a{
+    font-family: arial,sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.links a:hover{
+    text-decoration: underline;
+
+}
+.link_information{
+    width: 65%;
+}
+
+h3{
+    font-size: 21px;
+    color: black;
+    line-height: 1.3;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: arial,sans-serif;
+}
+/*EMBED VIDEOS PART OF MAIN*/
+.embed_videos table{
+    display: table;
+}
+table .videos{
+    border: 1px solid gainsboro;
+    padding-bottom: 120px;
+    border-radius: 8px;
+    overflow: auto;
+
+}
+/*RELATED SEARCH*/
+.related_search{
+    display: block;
+}
+.left_column{
+    display: inline-block;
+    padding-right: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+.right_column{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-right: 25px;
+    font-size: 15px;
+}
+.related_search a{
+    text-decoration: none;
+}
+
+/*FOOTER*/
+.footer{
+    width: 100%;
+    padding-top: 5px;
+    background-color: floralwhite;
+}
+.footer .top_footer{
+    padding-left: 160px;
+    display: block;
+    line-height: 40px;
+}
+.top_footer a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5f6368;
+}
+.top_footer .country{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5f6368;
+}
+.footer .bottom_footer{
+    padding-left: 160px;
+    display: block;
+    line-height: 40px;
+}
+.bottom_footer a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5f6368;
+    padding-right: 35px;
+}
+.bottom_footer .country{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5f6368;
+}
+
+
+
+
+/*STYLING BUTTON ARROW*/
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  @media screen and (max-width:850px) {
+    table tr > *{
+        display: block;
+        margin-left: 50px;
+    }
+    
+    table .videos{
+        margin-top: 20px;
+    }
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+    .bottom_navbar ul{
+        flex-wrap: wrap;
+    }
+    .bottom_navbar li{
+        flex-basis: 50%;
+    }
+    .bottom_navbar #settings{
+        padding-left: 30px;
+}
+
+@media screen and (max-width:600px){
+    iframe{
+        width: 200px;
+        height: 200px;
+    }
+    .videos{
+        margin-left: 40px;
+    }
+    .main{
+        margin-left: 90px;
+    }
+    
+    .navbar .container1{
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+    }
+    .navbar{
+        height: 100px;
+    }
+    .container1 .logo{
+        margin-left: -50px;
+        
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .footer .top_footer{
+        padding-left: 90px;
+        
+    }
+    .footer .bottom_footer{
+        padding-left: 90px;
+    }
+    .bottom_navbar{
+        padding-top: 45px;
+    }
+    .bottom_navbar ul{
+        padding-left: 80px;
+    }
+
+}
+
+@media screen and (max-width:450px){
+    .container1 .logo{
+        margin-left: -20px;
+    }
+}
