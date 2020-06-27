@@ -84,7 +84,7 @@ button{
 /*BOTTOM NAVBAR*/
 .bottom_navbar{
     width: 100%;
-}
+    }
 .bottom_navbar ul{
    padding-top: 50px;
    list-style: none;
@@ -182,7 +182,7 @@ table .videos{
 .footer{
     width: 100%;
     padding-top: 5px;
-    background-color: floralwhite;
+    background-color: #f2f2f2;
 }
 .footer .top_footer{
     padding-left: 160px;
@@ -232,6 +232,10 @@ table .videos{
   .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+  }
+  .tooltip{
+      color: #5f6368;
+      font-size: 12px;
   }
 
   @media screen and (max-width:850px) {
@@ -305,4 +309,15 @@ table .videos{
     .container1 .logo{
         margin-left: -20px;
     }
+    .main{
+        width: 70%;
+        margin-left: 50px;
+    }
+    .footer .top_footer{
+        padding-left: 50px;
+    }
+    .footer .bottom_footer{
+        padding-left: 50px;
+    }
+  
 }
